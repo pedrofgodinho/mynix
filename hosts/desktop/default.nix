@@ -10,7 +10,8 @@
 
   networking.hostName = host;
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
 
   services.xserver.enable = true;
   # Enable the KDE Plasma Desktop Environment.

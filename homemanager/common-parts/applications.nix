@@ -1,12 +1,17 @@
-{ pkgs, lib, config, myUsername, hosts, inputs, ... }:
+{ pkgs, lib, config, myUsername, host, inputs, ... }:
 
 {
   home.packages = with pkgs; [
+    # Apps
     firefox
-    btop
-    tree
     discord
     kdePackages.kate
+
+    # Utilities
+    btop
+    killall
+    neofetch
+    tree
   ];
 
   xdg.mimeApps = {

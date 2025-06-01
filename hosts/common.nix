@@ -69,9 +69,6 @@
     vim
     curl
     wget
-    htop
-    killall
-    neofetch
   ];
 
   # Enable Docker

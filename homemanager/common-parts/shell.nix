@@ -41,18 +41,17 @@
     enableNushellIntegration = true;
   };
 
-  programs.alacritty = {
+  programs.kitty = {
     enable = true;
     settings = {
-      terminal.shell = {
-        program = "${pkgs.nushell}/bin/nu";
-      };
-      font = {
-        size = 12.0;
-        normal = {
-          family = "FiraCode Nerd Font Mono";
-        };
-      };
+      font_family = "family=\"FiraCode Nerd Font\"";
+      bold_font = "auto";
+      italic_font = "auto";
+      bold_italic_font = "auto";
+      shell = "${pkgs.nushell}/bin/nu";
+      font_size = 12.0;
+      confirm_os_window_close = 0;
+      enable_audio_bell = false;
     };
   };
 }
